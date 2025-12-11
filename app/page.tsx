@@ -5,7 +5,7 @@ export default function Page() {
   const [number, setNumber] = useState<any>(0);
   const { theme, setTheme } = useTheme();
   const add = () => {
-    setNumber(number < 15 ? number + 1 : 15);
+    setNumber(number + 1);
   };
   const sub = () => {
     setNumber(number > 0 ? number - 1 : 0);
@@ -28,7 +28,6 @@ export default function Page() {
           -
         </div>
       </div>
-      <p className="text-amber-500text- text-sm ">Cant count above a 15</p>
     </div>
   );
 }
